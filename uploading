@@ -1,0 +1,9 @@
+from PIL import Image
+
+def load_image(image_path):
+    with Image.open(image_path) as img:
+        return img
+
+image_path = 'images/your_image.jpg'  # Example path
+image = load_image(image_path)
+image.show()
